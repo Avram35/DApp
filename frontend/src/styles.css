@@ -1,0 +1,57 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 16px;
+  font-family: system-ui, sans-serif;
+  line-height: 1.4;
+  color: #000;
+  background: #fff;
+}
+
+.app { max-width: 800px; margin: 0 auto; }
+
+.mono { font-family: monospace; }
+.muted { color: #555; }
+.grow { flex: 1; }
+
+.topbar {
+  display: flex; justify-content: space-between; align-items: center;
+  gap: 16px; flex-wrap: wrap; margin-bottom: 16px;
+}
+.brand h1 { margin: 0; font-size: 20px; }
+.brand p { margin: 0; font-size: 12px; }
+
+.tabs { display: flex; gap: 6px; margin-bottom: 16px; flex-wrap: wrap; }
+.tab { font-family: inherit; font-size: 14px; padding: 6px 10px; }
+.tab.active { font-weight: bold; text-decoration: underline; }
+
+.panel { border: 1px solid #000; padding: 16px; }
+.panel h2 { margin-top: 0; }
+
+label { display: block; margin: 12px 0 4px; font-size: 13px; }
+input, textarea { width: 100%; font-family: inherit; font-size: 14px; padding: 4px; }
+textarea { font-family: monospace; }
+input[type="checkbox"] { width: auto; }
+
+.row { display: flex; gap: 8px; margin: 8px 0; align-items: center; flex-wrap: wrap; }
+
+button { font-family: inherit; font-size: 14px; }
+
+hr { margin: 20px 0; }
+
+.checkrow { display: flex; gap: 8px; align-items: center; margin: 4px 0; font-size: 14px; }
+
+.idcard { border: 1px solid #000; padding: 12px; margin: 12px 0; }
+.idcard-head { display: flex; justify-content: space-between; font-size: 12px; margin-bottom: 8px; }
+.idcard-row { display: flex; justify-content: space-between; font-size: 13px; margin: 4px 0; }
+
+.verdict { border: 1px solid #000; padding: 12px; margin-top: 12px; }
+.verdict h3 { margin: 0 0 8px; }
+
+.ok-text, .logline.ok { color: #060; }
+.err-text, .logline.err { color: #900; }
+.logline.info { color: #005; }
+
+.logbox { margin-top: 20px; }
+.logbox h3 { font-size: 14px; }
+.logline { font-size: 13px; padding: 2px 0; word-break: break-all; }
